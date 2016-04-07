@@ -80,6 +80,7 @@ public class InforEguneratuServlet extends HttpServlet {
                     session.setAttribute("dni", (Object)dni);
                 } else {
                     this.mySQLdb.eguneratuLT((String)request.getSession().getAttribute("username"), request.getParameter("licensetype"));
+                    request.getSession().setAttribute("licensetype", request.getParameter("licensetype"));
                 }
                 request.setAttribute("eragiketaOndo", (Object)true);
                 rd = request.getRequestDispatcher("/jsp/menuNagusia.jsp");
