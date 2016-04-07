@@ -15,9 +15,7 @@
  */
 package bff;
 
-import helper.db.MySQLdb;
 import java.io.IOException;
-import java.io.PrintStream;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
@@ -28,7 +26,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-public class InforEguneratServlet extends HttpServlet {
+import helper.db.MySQLdb;
+
+public class InforEguneratuServlet extends HttpServlet {
     private static final long serialVersionUID = -676242268258514738L;
     private MySQLdb mySQLdb;
 
